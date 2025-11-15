@@ -10,6 +10,15 @@ export default function PublicLayout() {
           backgroundColor: "#fff",
         }
       }} />
+      <Stack.Screen name="other-options" options={{
+        headerShown: false,
+        presentation: "formSheet",
+        title: "",
+        headerShadowVisible: false,
+        sheetAllowedDetents: [0.5,],
+        sheetCornerRadius: 16,
+      }} />
+
     </Stack>
   )
 }

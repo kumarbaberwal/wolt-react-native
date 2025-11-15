@@ -1,11 +1,20 @@
-import { Stack } from "expo-router"
-import React from 'react'
+import useUserStore from "@/hooks/use-userstore";
+import { Stack } from "expo-router";
+import React from 'react';
 
 export default function RootNav() {
+  const { isGuest, user } = useUserStore();
+
+
+
   return (
     <Stack>
-      <Stack.Screen name="(public)" options={{ headerShown: false }} />
-      <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+      <Stack.Protected guard={isGuest || user}>
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+      </Stack.Protected>
+      <Stack.Protected guard={!isGuest && !user}>
+        <Stack.Screen name="(public)" options={{ headerShown: false }} />
+      </Stack.Protected>
     </Stack>
   )
 }
