@@ -9,7 +9,7 @@ export default function RestaurantsLayout() {
           backgroundColor: "#fff"
         }
       }}>
-      <Stack.Screen name="index" options={{ title: "Restaurants" }} />
+      <Stack.Screen name="index" options={{ title: "Restaurants", headerShown: false }} />
     </Stack>
   )
 }
