@@ -4,11 +4,8 @@ import React from 'react'
 export default function AuthLayout() {
   return (
     <Stack>
-      <Stack.Screen name="index" options={{
+      <Stack.Screen name="(tabs)" options={{
         headerShown: false,
-        contentStyle: {
-          backgroundColor: "#fff",
-        }
       }} />
     </Stack>
   )

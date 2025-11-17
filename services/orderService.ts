@@ -1,4 +1,4 @@
-import type { CartItem } from '@/hooks/use-cartstore';
+import type { CartItem } from '@/hooks/useCartStore';
 
 export interface OrderData {
   items: CartItem[];

@@ -1,4 +1,4 @@
-import useUserStore from "@/hooks/use-userstore";
+import useUserStore from "@/hooks/useUserStore";
 import { Stack } from "expo-router";
 import React from 'react';
 

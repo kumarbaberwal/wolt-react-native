@@ -1,4 +1,4 @@
-import useUserStore from "@/hooks/use-userstore";
+import useUserStore from "@/hooks/useUserStore";
 import React from 'react';
 import { Button, Text, View } from 'react-native';
 

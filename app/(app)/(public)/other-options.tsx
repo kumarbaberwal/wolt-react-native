@@ -1,7 +1,7 @@
 import AppleAuthButton from "@/components/auth/AppleAuthButton"
 import GoogleAuthButton from "@/components/auth/GoogleAuthButton"
 import { Colors, Fonts } from "@/constants/theme"
-import useUserStore from "@/hooks/use-userstore"
+import useUserStore from "@/hooks/useUserStore"
 import { FontAwesome5, Ionicons } from "@expo/vector-icons"
 import { useRouter } from "expo-router"
 import React from 'react'
